@@ -1,5 +1,8 @@
 image: python:3.8
 
+variables:
+  GIT_DEPTH: 0
+
 
 check_code_style:
   tags: ['docker']
