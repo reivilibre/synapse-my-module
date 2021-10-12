@@ -1,0 +1,1 @@
+recursive-include synapse_my_module *.sql
