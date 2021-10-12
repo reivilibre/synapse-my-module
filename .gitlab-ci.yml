@@ -25,6 +25,14 @@ unit_tests:
 check_newsfile:
   tags: ['docker']
   script:
+    - "echo sr"
+    - "git show-ref"
+    - "echo gr"
+    - "git remote -v"
+    - "echo gb"
+    - "git branch"
+    - "echo gt"
+    - "git tag"
     - "python -m pip install towncrier"
     - "git branch -c master origin/master"
     - "scripts-dev/check_newsfragment.sh $CI_MERGE_REQUEST_IID"
